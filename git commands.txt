@@ -1,0 +1,75 @@
+----------------------------------GIT COMMANDS-----------------------------------
+
+1.Git init--->   created blank new repository/folder which has all directory files and..temp files  required for git working
+
+2.Git-clone--->to create local copy of the required files remotely......
+
+3.Git-status--->to know the current status
+dir-list alll files 
+cd --name-- > - to enter into file
+****if we did some changes to any of the file....then******
+git status-shows some changes are highlighted...but 
+in RED colour as they are not saved...
+TO SAVE- -->  git add <file name> ---->to update what will be committed...
+then it turns GREEN coloured stating  modified...STATING-IT HAS ARRIVED. STAGED AREA...
+
+4,git-commit---> acts as a lock final lock to the changes we have done by adding the changed file.....by :  git commmit -m "gnjghfihgi"
+
+5.Git diff--> to see what changes are done to the file by stating the name of the file which is modified.
+******BUT there are 2 things : 1. staged area --->to committ any file...must be in staged area (a stage where beofre adding or modifying fike is brought)        
+                                                  2. unstaged area
+
+6.git log---->to all the chnges done till now by anyone on a particular project.
+to see specified one  :::::git log -5 
+!!!!!!!!!!!!!!!!!!!!!11incase stuck-type "q" or "p"
+
+7.git show---> copy the numbered address from above and say : git show  b24e8000a59d03fc53c4798dc230385e34a82974
+it willl show alll the changes done till now ...
+
+8.git branch---> to see current branch 
+
+9.git branch _NEW_-->to add a new branch
+
+10.git checkout  kavyaBranch--->changed to another branch...(all thing copied to that as it is ) with change in branch
+  now GREEN will be shown to = kavyaBranch
+
+11.to switcn back to MASTER BRANCH------>  git checkout master 
+
+11. Delete branch------>  git branch -d kavyaBranch
+
+12.git merge----> check on which branch we are......we just want to merge...new branch with the orginal branch..so we move ahaef by-git chekout master..then merge new branch...
+                           git merge <new branch>
+                           type-->git log->vshows the HEAD-->Master,new
+
+13. TO delete some changes made to the NEW branch we ..first leave the master branch and then move to the CONTENT changed branch....so NEW in this case :
+      then :  git reset --hard HEAD^******hard makes the latest commit deleted...with content changed
+   so, 
+         "the string changed"  changes deleted...latest commit-UNDO
+
+14.IF we want to remove commit....but see te changes... then use : git reset --soft HEAD^^
+     when we use : git log -3 
+                   shows the next dowm commit..same 
+    but when we say:git status-- so the modified file is shown.......................................this means in soft...commit cap removed..but changes are visible
+                                                                                                .......................................................in hard..commit as well commit removed (last)..
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+The master as well as NEW branch on which we do the changes..are not reflected to the manthe boss MASTER branch.....
+means... 5PCS workong under ine bigggg pc..then changes in  MASTER & NEW barnches of 5 PCS will not be reflected in one biggg PC ..
+To do so..we use PUSH ..TO MAKE THE CHANGES VISIBLE TO THE MAIN "MASTER" branch..
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+15..to restore the origisal page..means to remove the changes we use --->git restore --staged index.html (to remove from unstaged area)RED colour
+16. --->git restore index.html
+CHANGES REMOVED NOW-----
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+to sync remote and local---->git push
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+CONTRIBUTION STARTED PART-2
+1. Pull  Request :: Here we use fork sign to basically ask the ..owner repository to create a copy of the code..and be avaliable to us in our local for changes and modifications.
+                             After that..we send a pull request...so that from our local code can be update to the MAIN code...
+ 
